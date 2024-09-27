@@ -1,7 +1,8 @@
 // Sito.scss
 
 .app__home,
-.app__skills {
+.app__skills,
+.app__project {
   padding: 2rem;
   @media screen and (max-width: 768px) {
     padding: 1rem;
@@ -17,6 +18,21 @@
     height: auto;
   }
 }
+
+.app__project {
+  .project-card {
+    background-color: #1e1e1e;
+    &-React {
+      border-left: 5px solid #00a2b0;
+      border-top: 5px solid #00a2b0;
+    }
+    &-Vue {
+      border-left: 5px solid #3fb984;
+      border-top: 5px solid #3fb984;
+    }
+  }
+}
+
 .app__home {
   background-image: url("./images/sfondo.jpg");
   background-size: cover;
@@ -61,4 +77,8 @@
 
 .text-primary {
   color: #00a2b0;
+}
+
+.text-vue {
+  color: #3fb984;
 }
