@@ -1,0 +1,33 @@
+// Sito.scss
+.app__home,
+.app__servizi {
+  padding: 2rem;
+  background-color: #000; // Sfondo nero
+  color: #e0e0e0; // Testo chiaro per leggibilità
+
+  h1 {
+    font-family: "Merriweather", serif;
+    color: #d8a852; // Colore oro per i titoli
+    font-size: 2.5rem;
+    letter-spacing: 0.05em;
+  }
+
+  p {
+    font-family: "Roboto", sans-serif;
+    line-height: 1.8;
+    font-size: 1.1rem;
+  }
+
+  a {
+    color: #d8a852;
+    font-weight: 500;
+
+    &:hover {
+      color: #e0e0e0;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    padding: 1rem;
+  }
+}
