@@ -27,7 +27,7 @@ const SkillCard = ({ name, icon, description, index }) => {
     return () => {
       if (cardRef.current) observer.unobserve(cardRef.current);
     };
-  }, []);
+  }, [cardRef]);
 
   return (
     <div
