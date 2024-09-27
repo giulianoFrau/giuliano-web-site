@@ -1,11 +1,11 @@
 // Sito.scss
 .app__home {
-  height: 90vh;
+  height: 100vh;
   background-image: url("./images/sfondo.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  background-color: 010101;
-  background-position: bottom;
+  background-color: #010101;
+  background-position: left;
   &__title {
     font-size: 3rem;
   }
@@ -13,11 +13,16 @@
   &__subtitle {
     font-size: 1.5rem;
   }
+
+  @media screen and (max-width: 768px) {
+    &__title {
+      font-size: 2.2rem;
+    }
+  }
 }
 .app__home,
 .app__servizi {
   padding: 2rem;
-  // Sfondo nero
   color: #e0e0e0; // Testo chiaro per leggibilità
 
   h1 {
@@ -33,16 +38,27 @@
     font-size: 1.1rem;
   }
 
-  a {
-    color: #00e2f0;
-    font-weight: 500;
-
-    &:hover {
-      color: #e0e0e0;
-    }
-  }
-
   @media screen and (max-width: 768px) {
     padding: 1rem;
+  }
+}
+
+.btn-primary {
+  background-color: #00a2b0;
+  border-color: #00a2b0;
+  transition: all 0.3s ease;
+  &:hover {
+    transform: scale(1.1);
+    transition: all 0.3s ease;
+  }
+}
+
+.btn-primary-outline {
+  color: #00a2b0;
+  border: 1px solid #00a2b0;
+  transition: all 0.3s ease;
+  &:hover {
+    transform: scale(1.1);
+    transition: all 0.3s ease;
   }
 }
