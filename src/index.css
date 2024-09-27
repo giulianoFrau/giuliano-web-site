@@ -30,7 +30,7 @@ td:first-child {
 }
 a {
   font-weight: 500;
-  color: #016d92;
+  color: #00a2b0;
   text-decoration: inherit;
 }
 
@@ -39,13 +39,13 @@ a {
 }
 
 a:hover {
-  color: #016d92;
+  color: #00a2b0;
 }
 
 h1 {
   font-size: 2.5rem;
   font-weight: 600;
-  color: #1f2937;
+  color: #00a2b0;
   margin-bottom: 1rem;
 }
 

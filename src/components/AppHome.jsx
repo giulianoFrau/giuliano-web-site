@@ -6,7 +6,7 @@ const AppHome = () => {
       <div className="app__home">
         <div className="app__home__content flex flex-col items-end h-full justify-center ">
           <div className="flex flex-col gap-8">
-            <div className="app__home__titles flex flex-col gap-2">
+            <div className="app__home__titles flex flex-col gap-2 text-white">
               <div className="app__home__title">
                 Ciao, sono Giuliano <br className="hidden md:block" /> Frontend
                 developer

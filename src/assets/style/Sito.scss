@@ -1,6 +1,24 @@
 // Sito.scss
-.app__home {
+
+.app__home,
+.app__skills {
   height: 100vh;
+  padding: 2rem;
+  @media screen and (max-width: 768px) {
+    padding: 1rem;
+  }
+}
+
+.app__skills {
+  background-color: #1e1e1e;
+  .skill-card {
+    background-color: #111111;
+  }
+  @media screen and (max-width: 768px) {
+    height: auto;
+  }
+}
+.app__home {
   background-image: url("./images/sfondo.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -18,28 +36,6 @@
     &__title {
       font-size: 2.2rem;
     }
-  }
-}
-.app__home,
-.app__servizi {
-  padding: 2rem;
-  color: #e0e0e0; // Testo chiaro per leggibilità
-
-  h1 {
-    font-family: "Merriweather", serif;
-    color: cf1c1b; // Colore oro per i titoli
-    font-size: 2.5rem;
-    letter-spacing: 0.05em;
-  }
-
-  p {
-    font-family: "Roboto", sans-serif;
-    line-height: 1.8;
-    font-size: 1.1rem;
-  }
-
-  @media screen and (max-width: 768px) {
-    padding: 1rem;
   }
 }
 
@@ -61,4 +57,8 @@
     transform: scale(1.1);
     transition: all 0.3s ease;
   }
+}
+
+.text-primary {
+  color: #00a2b0;
 }
