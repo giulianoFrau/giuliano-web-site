@@ -8,7 +8,7 @@
   font-weight: 400;
   color-scheme: light dark;
   color: #1a1a1a;
-  background-color: #000;
+  background-color: #080609;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -17,7 +17,7 @@
 
 html,
 body {
-  background-color: #000;
+  background-color: #080609;
   height: 100vh;
 }
 
@@ -27,16 +27,16 @@ td:first-child {
 }
 
 .p-radiobutton-box {
-  border: 1px solid #d8a852;
+  border: 1px solid #00a2b0;
 }
 
 span {
-  color: #d8a852;
-  border-color: #d8a852;
+  color: #00a2b0;
+  border-color: #00a2b0;
 }
 .p-menuitem-link span,
 h1 {
-  color: #d8a852 !important;
+  color: #00a2b0 !important;
 }
 .blocco {
   background-color: #eadfc9;
@@ -44,7 +44,7 @@ h1 {
 
 a {
   font-weight: 500;
-  color: #d8a852;
+  color: #00a2b0;
   text-decoration: inherit;
 }
 
@@ -53,7 +53,7 @@ a {
 }
 
 a:hover {
-  color: #d8a852;
+  color: #00a2b0;
 }
 .p-accordion
   .p-accordion-header:not(.p-disabled)
@@ -65,11 +65,10 @@ h1 {
   font-weight: 600;
   color: #1f2937;
   margin-bottom: 1rem;
-  text-align: center;
 }
 
 button:hover {
-  background-color: #d8a852;
+  background-color: #00a2b0;
 }
 
 button:focus,

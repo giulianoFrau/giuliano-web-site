@@ -12,11 +12,10 @@ const AppMenu = () => {
   ];
 
   return (
-    <div className="flex justify-between pt-5">
-      <div className="w-full"></div>
+    <div className="flex justify-center pt-5">
       <Menubar
         model={items}
-        className=" shadow-md p-4 border-gray-100 bg-transparent w-full justify-end"
+        className=" shadow-md p-4 border-gray-100 bg-transparent w-full md:justify-center"
       />
     </div>
   );

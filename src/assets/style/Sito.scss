@@ -1,13 +1,28 @@
 // Sito.scss
+.app__home {
+  height: 90vh;
+  background-image: url("./images/sfondo.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: 010101;
+  background-position: bottom;
+  &__title {
+    font-size: 3rem;
+  }
+
+  &__subtitle {
+    font-size: 1.5rem;
+  }
+}
 .app__home,
 .app__servizi {
   padding: 2rem;
-  background-color: #000; // Sfondo nero
+  // Sfondo nero
   color: #e0e0e0; // Testo chiaro per leggibilità
 
   h1 {
     font-family: "Merriweather", serif;
-    color: #d8a852; // Colore oro per i titoli
+    color: cf1c1b; // Colore oro per i titoli
     font-size: 2.5rem;
     letter-spacing: 0.05em;
   }
@@ -19,7 +34,7 @@
   }
 
   a {
-    color: #d8a852;
+    color: #00e2f0;
     font-weight: 500;
 
     &:hover {
