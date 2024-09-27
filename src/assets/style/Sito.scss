@@ -2,13 +2,17 @@
 
 .app__home,
 .app__skills,
-.app__project {
+.app__project,
+.app__info {
   padding: 2rem;
   @media screen and (max-width: 768px) {
     padding: 1rem;
   }
 }
 
+.app__info {
+  background-color: #00a2b0;
+}
 .app__skills {
   background-color: #1e1e1e;
   .skill-card {
