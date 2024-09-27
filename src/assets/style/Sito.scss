@@ -2,7 +2,6 @@
 
 .app__home,
 .app__skills {
-  height: 100vh;
   padding: 2rem;
   @media screen and (max-width: 768px) {
     padding: 1rem;
@@ -24,6 +23,7 @@
   background-repeat: no-repeat;
   background-color: #010101;
   background-position: left;
+  height: 100vh;
   &__title {
     font-size: 3rem;
   }
