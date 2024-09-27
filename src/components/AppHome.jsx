@@ -19,7 +19,13 @@ const AppHome = () => {
               <Button
                 label="Scarica il mio CV"
                 className="btn-primary-outline p-2 "
-              />
+                onClick={() => {
+                  window.open(
+                    "https://drive.google.com/file/d/1IQ_NMfALNAEicx6wBBTd9XKBj_4bhEXS/view"
+                  );
+                }}
+              ></Button>
+
               <Button
                 label="I miei progetti"
                 className="btn-primary p-2 "
