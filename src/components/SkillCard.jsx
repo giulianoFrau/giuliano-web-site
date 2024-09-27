@@ -10,13 +10,13 @@ const SkillCard = ({ name, icon, description, index }) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
             setIsVisible(true);
-            observer.disconnect(); // Disconnetti dopo aver rilevato l'entrata nel viewport
+            observer.disconnect();
           }
         });
       },
       {
-        threshold: 0.1, // La card è visibile al 10%
-        rootMargin: "100px", // Inizia a osservare 100px prima che l'elemento entri nel viewport
+        threshold: 0.1,
+        rootMargin: "100px",
       }
     );
 
@@ -35,7 +35,7 @@ const SkillCard = ({ name, icon, description, index }) => {
       className={`skill-card text-white p-8 sm:p-4 lg:p-8 rounded-lg flex flex-col gap-3 lg:h-72 transition-opacity duration-500 ${
         isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
       }`}
-      style={{ transitionDelay: `${index * 0.4}s` }} // Delay tra le card
+      style={{ transitionDelay: `${index * 0.4}s` }}
     >
       <i className={icon + " text-5xl flex justify-center text-primary"}></i>
       <h3 className="text-center text-2xl ">{name}</h3>
