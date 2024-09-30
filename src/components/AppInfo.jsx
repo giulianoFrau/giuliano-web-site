@@ -1,6 +1,6 @@
-import dev from "../assets/style/images/dev.png";
-import { Image } from "primereact/image";
+import dev from "../assets/style/images/dev.jpg";
 import { Button } from "primereact/button";
+import { Avatar } from "primereact/avatar";
 
 const AppInfo = () => {
   return (
@@ -9,19 +9,17 @@ const AppInfo = () => {
       <div className="flex flex-col lg:flex-row items-center justify-center space-y-10 lg:space-y-0 lg:space-x-16">
         {/* Image */}
         <div className="lg:w-1/3 flex justify-center">
-          <Image
-            src={dev}
-            alt="Logo"
-            width="250"
-            className="rounded-full shadow-xl transition-transform transform hover:scale-110 duration-300"
+          <Avatar
+            image={dev}
+            size="xlarge"
+            shape="circle"
+            className="w-40 mb-5 lg:mb-0"
           />
         </div>
         {/* Intro Text */}
         <div className="lg:w-2/3 text-center lg:text-left space-y-6">
-          <h1 className="text-5xl font-extrabold text-[#00C9D8] animate-pulse">
-            Su di me
-          </h1>
-          <p className="text-xl leading-relaxed text-[#B3B3B3]">
+          <h2 className="text-4xl  text-[#00C9D8] ">Su di me</h2>
+          <p className="text-xl leading-relaxed text-white">
             Sono una persona socievole, seria, puntuale e molto disponibile.
             Imparo rapidamente nuove metodologie di lavoro e mi impegno sempre
             al massimo per raggiungere gli obiettivi prefissati.
@@ -35,7 +33,7 @@ const AppInfo = () => {
       {/* Experience Section */}
       <div className="text-center lg:text-left space-y-8">
         <h2 className="text-4xl font-semibold text-[#00C9D8]">Esperienza</h2>
-        <p className="text-lg leading-relaxed text-[#B3B3B3]">
+        <p className="text-lg leading-relaxed ">
           Gestione completa del ciclo di vita dei progetti, con un focus su
           progetti chiave come Landing Pages orientate alla Lead Generation,
           progettazione di rubriche personali e sviluppo dell'intranet
@@ -43,7 +41,7 @@ const AppInfo = () => {
           permessi. Tecnologie utilizzate: Vue.js (2.7 e 3), Javascript ES6,
           Sass, CSS, HTML5, MJML, Bootstrap, PrimeVue, PrimeFlex, e altro.
         </p>
-        <p className="text-lg leading-relaxed text-[#B3B3B3]">
+        <p className="text-lg leading-relaxed text-white">
           Attualmente sto studiando React da autodidatta, e questo sito è
           realizzato proprio con React.
         </p>
