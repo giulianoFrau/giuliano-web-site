@@ -1,5 +1,3 @@
-import dev from "../assets/images/dev.webp";
-import dev2 from "../assets/images/dev2.webp";
 import { Button } from "primereact/button";
 import { Avatar } from "primereact/avatar";
 
@@ -12,7 +10,7 @@ const AppInfo = () => {
       <div className="flex flex-col lg:flex-row items-center justify-center space-y-10 lg:space-y-0 lg:space-x-16 mt-16">
         <div className="lg:w-1/3 flex justify-center ">
           <Avatar
-            image={dev}
+            image="https://i.postimg.cc/YCfBtQBm/dev.webp"
             size="xlarge"
             shape="circle"
             className="w-40 mb-5 lg:mb-0 "
@@ -59,7 +57,7 @@ const AppInfo = () => {
 
         <div className="lg:w-1/3 flex justify-center ">
           <Avatar
-            image={dev2}
+            image="https://i.postimg.cc/NM8dHkb1/dev2.webp"
             size="xlarge"
             shape="circle"
             className="w-40 mb-5 lg:mb-0 "

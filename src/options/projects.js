@@ -1,12 +1,8 @@
-import vetrina from "../assets/images/vetrina.webp";
-import pokedex from "../assets/images/pokedex.webp";
-import country from "../assets/images/country.webp";
-
 export const projects = [
   {
     progetto: "Pokedex",
     id: 0,
-    preview: pokedex,
+    preview: "https://i.postimg.cc/ncsHf3kR/pokedex.webp",
     link_progetto: "https://react-pokedex-zeta-three.vercel.app/",
     framework: "React 18",
     tecnologie:
@@ -15,7 +11,7 @@ export const projects = [
   },
   {
     progetto: "Sito vetrina",
-    preview: vetrina,
+    preview: "https://i.postimg.cc/9QhFPGdL/vetrina.webp",
     id: 1,
     link_progetto: "https://sitovetrina.vercel.app/#/homePage",
     framework: "Vue 3",
@@ -25,7 +21,7 @@ export const projects = [
   },
   {
     progetto: "Country",
-    preview: country,
+    preview: "https://i.postimg.cc/bJRZbZnG/country.webp",
     id: 2,
     link_progetto: "https://react-crud-app-eosin.vercel.app/",
     framework: "React 18",
