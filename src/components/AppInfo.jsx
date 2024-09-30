@@ -1,4 +1,4 @@
-import dev from "../assets/style/images/dev.jpg";
+import dev from "../assets/style/images/dev.webp";
 import { Button } from "primereact/button";
 import { Avatar } from "primereact/avatar";
 

@@ -1,6 +1,6 @@
-import vetrina from "../assets/style/images/vetrina.png";
-import pokedex from "../assets/style/images/pokedex.png";
-import country from "../assets/style/images/country.png";
+import vetrina from "../assets/style/images/vetrina.webp";
+import pokedex from "../assets/style/images/pokedex.webp";
+import country from "../assets/style/images/country.webp";
 
 export const projects = [
   {
