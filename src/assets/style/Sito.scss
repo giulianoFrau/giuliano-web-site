@@ -38,7 +38,7 @@
 }
 
 .app__home {
-  background-image: url("./images/sfondo.jpg");
+  background-image: url("./images/sfondo.webp");
   background-size: cover;
   background-repeat: no-repeat;
   background-color: #010101;
@@ -73,6 +73,11 @@
   color: #00a2b0;
   border: 1px solid #00a2b0;
   transition: all 0.3s ease;
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(7.5px);
+  -webkit-backdrop-filter: blur(7.5px);
+  border: 1px solid #00a2b0;
   &:hover {
     transform: scale(1.1);
     transition: all 0.3s ease;

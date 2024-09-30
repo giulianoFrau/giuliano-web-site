@@ -8,8 +8,8 @@ const AppHome = () => {
           <div className="flex flex-col gap-8">
             <div className="app__home__titles flex flex-col gap-2 text-white">
               <div className="app__home__title">
-                Ciao, sono Giuliano <br className="hidden md:block" /> Frontend
-                developer
+                Ciao! sono Giuliano,
+                <br className="hidden md:block" /> Frontend developer
               </div>
               <div className="app__home__subtitle">
                 Focalizzato su design funzionali e soluzioni web efficaci.

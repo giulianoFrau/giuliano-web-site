@@ -43,7 +43,7 @@ const ProjectCard = ({
           onClick={() => window.open(link_repo)}
           className={`text-${
             framework === "React 18" ? "primary" : "vue"
-          } underline`}
+          } underline break-all`}
         >
           {link_repo}
         </span>

@@ -44,12 +44,17 @@ const AppInfo = () => {
           gestione delle risorse umane e alle richieste di ferie e permessi. Nel
           mio lavoro, ho utilizzato tecnologie come Vue.js (sia la versione 2.7
           che la 3), JavaScript ES6, Sass, CSS, HTML5, MJML, Bootstrap, PrimeVue
-          e PrimeFlex, tra le altre.
+          e PrimeFlex, tra le altre. Utilizzo Outlook, Teams, Skype, Slack,
+          Gmail per la comunicazione, Trello, Confluence e Microsoft Loop per la
+          gestione dei progetti, Figma per il design. GitHub e VSCode per lo
+          sviluppo del codice e Microsoft Clarity per l'analisi. Infine, Excel e
+          Word per la gestione dei dati e dei documenti.
         </p>
         <p className="text-lg leading-relaxed text-white">
           Attualmente sto studiando React da autodidatta, mettendo subito in
           pratica le conoscenze acquisite con i lavori precedenti a questa
-          sezione. Questo sito è realizzato proprio con React.
+          sezione. Questo sito è realizzato proprio con{" "}
+          <span className="text-[#00C9D8]">React</span>.
         </p>
       </div>
 
