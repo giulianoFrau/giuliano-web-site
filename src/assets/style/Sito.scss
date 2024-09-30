@@ -11,7 +11,7 @@
 }
 
 .app__info {
-  background-color: #00a2b0;
+  background-color: #00c9d8;
 }
 .app__skills {
   background-color: #1e1e1e;
@@ -27,8 +27,8 @@
   .project-card {
     background-color: #1e1e1e;
     &-React {
-      border-left: 5px solid #00a2b0;
-      border-top: 5px solid #00a2b0;
+      border-left: 5px solid #00c9d8;
+      border-top: 5px solid #00c9d8;
     }
     &-Vue {
       border-left: 5px solid #3fb984;
@@ -60,8 +60,8 @@
 }
 
 .btn-primary {
-  background-color: #00a2b0;
-  border-color: #00a2b0;
+  background-color: #00c9d8;
+  border-color: #00c9d8;
   transition: all 0.3s ease;
   &:hover {
     transform: scale(1.1);
@@ -70,14 +70,14 @@
 }
 
 .btn-primary-outline {
-  color: #00a2b0;
-  border: 1px solid #00a2b0;
+  color: #00c9d8;
+  border: 1px solid #00c9d8;
   transition: all 0.3s ease;
   background: rgba(255, 255, 255, 0.1);
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   backdrop-filter: blur(7.5px);
   -webkit-backdrop-filter: blur(7.5px);
-  border: 1px solid #00a2b0;
+  border: 1px solid #00c9d8;
   &:hover {
     transform: scale(1.1);
     transition: all 0.3s ease;
@@ -85,7 +85,7 @@
 }
 
 .text-primary {
-  color: #00a2b0;
+  color: #00c9d8;
 }
 
 .text-vue {

@@ -27,11 +27,11 @@ td:first-child {
   padding-left: 0;
 }
 .p-menuitem-link span {
-  color: #00a2b0 !important;
+  color: #00c9d8 !important;
 }
 a {
   font-weight: 500;
-  color: #00a2b0;
+  color: #00c9d8;
   text-decoration: inherit;
 }
 
@@ -40,13 +40,13 @@ a {
 }
 
 a:hover {
-  color: #00a2b0;
+  color: #00c9d8;
 }
 
 h1 {
   font-size: 2.5rem;
   font-weight: 600;
-  color: #00a2b0;
+  color: #00c9d8;
   margin-bottom: 1rem;
 }
 

@@ -21,7 +21,7 @@ const AppInfo = () => {
         </div>
         {/* Intro Text */}
         <div className="lg:w-2/3 text-center lg:text-left space-y-6">
-          <h2 className="text-4xl  text-[#00C9D8] ">Su di me</h2>
+          <h2 className="text-4xl font-semibold  text-[#00C9D8] ">Su di me</h2>
           <p className="text-xl leading-relaxed text-white">
             Sono una persona socievole, seria, puntuale e molto disponibile.
             Imparo rapidamente nuove metodologie di lavoro e mi impegno sempre
