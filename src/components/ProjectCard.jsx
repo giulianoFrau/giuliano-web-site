@@ -10,7 +10,7 @@ const ProjectCard = ({
 }) => {
   return (
     <div
-      className={`project-card project-card-${framework} cursor-pointer hover:scale-105 transition-all duration-100 text-white p-8 sm:p-4 lg:py-8 rounded-lg flex flex-col gap-3  transition-opacity duration-500  `}
+      className={`project-card project-card-${framework} cursor-pointer transform hover:scale-105 transition-all duration-300 text-white p-8 sm:p-4 lg:py-8 rounded-lg flex flex-col gap-3    `}
       onClick={() => window.open(link_progetto)}
     >
       <Image src={preview} alt="Image" />
@@ -37,10 +37,13 @@ const ProjectCard = ({
           {tecnologie}
         </span>
       </p>
-      <p className="text-center mt-auto lg:mt-0 ">
+      <p className="text-center mt-auto lg:mt-0  ">
         Repository: <br />
         <span
-          className={`text-${framework === "React 18" ? "primary" : "vue"} `}
+          onClick={() => window.open(link_repo)}
+          className={`text-${
+            framework === "React 18" ? "primary" : "vue"
+          } underline`}
         >
           {link_repo}
         </span>

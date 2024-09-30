@@ -19,6 +19,7 @@ html,
 body {
   background-color: #000;
   height: 100vh;
+  scroll-behavior: smooth;
 }
 
 th:first-child,

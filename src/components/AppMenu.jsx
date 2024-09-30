@@ -2,12 +2,12 @@ import { Menubar } from "primereact/menubar";
 
 const AppMenu = () => {
   const items = [
-    { label: "HomePage", icon: "pi pi-home", url: "/" },
-    { label: "Servizi", icon: "pi pi-table", url: "/servizi" },
+    { label: "Home", icon: "pi pi-home", url: "#home" },
+    { label: "Le mie skills", icon: "pi pi-star", url: "#skills" },
     {
-      label: "Info utili",
-      icon: "pi pi-info-circle",
-      url: "/informazioni",
+      label: "Su di me",
+      icon: "pi pi-user",
+      url: "#contacts",
     },
   ];
 
