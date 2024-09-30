@@ -5,6 +5,7 @@ import country from "../assets/images/country.webp";
 export const projects = [
   {
     progetto: "Pokedex",
+    id: 0,
     preview: pokedex,
     link_progetto: "https://react-pokedex-zeta-three.vercel.app/",
     framework: "React 18",
@@ -15,6 +16,7 @@ export const projects = [
   {
     progetto: "Sito vetrina",
     preview: vetrina,
+    id: 1,
     link_progetto: "https://sitovetrina.vercel.app/#/homePage",
     framework: "Vue 3",
     tecnologie:
@@ -24,6 +26,7 @@ export const projects = [
   {
     progetto: "Country",
     preview: country,
+    id: 2,
     link_progetto: "https://react-crud-app-eosin.vercel.app/",
     framework: "React 18",
     tecnologie:

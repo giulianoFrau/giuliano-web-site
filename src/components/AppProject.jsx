@@ -13,7 +13,7 @@ const AppProject = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-9 justify-center">
           {projects.map((project, index) => (
             <ProjectCard
-              key={project.name}
+              key={project.id}
               progetto={project.progetto}
               link_progetto={project.link_progetto}
               framework={project.framework}
