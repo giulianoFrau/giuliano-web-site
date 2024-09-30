@@ -1,4 +1,5 @@
-import dev from "../assets/style/images/dev3.jpg";
+import dev from "../assets/style/images/dev.webp";
+import dev2 from "../assets/style/images/dev2.webp";
 import { Button } from "primereact/button";
 import { Avatar } from "primereact/avatar";
 
@@ -8,8 +9,8 @@ const AppInfo = () => {
       className="app__info bg-gradient-to-r from-black via-gray-900 to-black text-white py-16 px-5 lg:px-20"
       id="contacts"
     >
-      <div className="flex flex-col lg:flex-row items-center justify-center space-y-10 lg:space-y-0 lg:space-x-16">
-        <div className="lg:w-1/3 flex justify-center">
+      <div className="flex flex-col lg:flex-row items-center justify-center space-y-10 lg:space-y-0 lg:space-x-16 mt-16">
+        <div className="lg:w-1/3 flex justify-center ">
           <Avatar
             image={dev}
             size="xlarge"
@@ -30,28 +31,40 @@ const AppInfo = () => {
 
       <div className="my-16 w-full border-b-2 border-[#00C9D8]"></div>
 
-      <div className="text-center lg:text-left space-y-8">
-        <h2 className="text-4xl font-semibold text-[#00C9D8]">Esperienza</h2>
-        <p className="text-lg leading-relaxed ">
-          Ho gestito l'intero ciclo di vita dei progetti, concentrandomi su
-          iniziative chiave come la creazione di Landing Pages pensate per la
-          Lead Generation, la progettazione di rubriche personalizzate, e lo
-          sviluppo di intranet aziendali con particolare attenzione alla
-          gestione delle risorse umane e alle richieste di ferie e permessi. Nel
-          mio lavoro, ho utilizzato tecnologie come Vue.js (sia la versione 2.7
-          che la 3), JavaScript ES6, Sass, CSS, HTML5, MJML, Bootstrap, PrimeVue
-          e PrimeFlex, tra le altre. Utilizzo Outlook, Teams, Skype, Slack,
-          Gmail per la comunicazione, Trello, Confluence e Microsoft Loop per la
-          gestione dei progetti, Figma per il design. GitHub e VSCode per lo
-          sviluppo del codice e Microsoft Clarity per l'analisi. Infine, Excel e
-          Word per la gestione dei dati e dei documenti.
-        </p>
-        <p className="text-lg leading-relaxed text-white">
-          Attualmente sto studiando React da autodidatta, mettendo subito in
-          pratica le conoscenze acquisite con i lavori precedenti a questa
-          sezione. Questo sito è realizzato proprio con{" "}
-          <span className="text-[#00C9D8]">React</span>.
-        </p>
+      <div className="flex flex-col-reverse lg:flex-row items-center justify-center gap-10 space-y-10 lg:space-y-0 lg:space-x-16">
+        <div className="lg:w-2/3 text-center lg:text-left space-y-6">
+          <h2 className="text-4xl font-semibold text-[#00C9D8]">Esperienza</h2>
+          <p className="text-xl leading-relaxed text-white">
+            Ho gestito l'intero ciclo di vita dei progetti, concentrandomi su
+            iniziative chiave come la creazione di Landing Pages pensate per la
+            Lead Generation, la progettazione di rubriche personalizzate, e lo
+            sviluppo di intranet aziendali con particolare attenzione alla
+            gestione delle risorse umane e alle richieste di ferie e permessi.
+            Nel mio lavoro, ho utilizzato tecnologie come{" "}
+            <span className="text-[#3fb984]">Vue.js</span> (sia la versione 2.7
+            che la 3), JavaScript ES6, Sass, CSS, HTML5, MJML, Bootstrap,
+            PrimeVue e PrimeFlex, tra le altre. Utilizzo Outlook, Teams, Skype,
+            Slack, Gmail per la comunicazione, Trello, Confluence e Microsoft
+            Loop per la gestione dei progetti, Figma per il design. GitHub e
+            VSCode per lo sviluppo del codice e Microsoft Clarity per l'analisi.
+            Infine, Excel e Word per la gestione dei dati e dei documenti.
+          </p>
+          <p className="text-xl leading-relaxed text-white">
+            Attualmente sto studiando React da autodidatta, mettendo subito in
+            pratica le conoscenze acquisite con i lavori precedenti a questa
+            sezione. Questo sito è realizzato proprio con{" "}
+            <span className="text-[#00C9D8]">React</span>.
+          </p>
+        </div>
+
+        <div className="lg:w-1/3 flex justify-center ">
+          <Avatar
+            image={dev2}
+            size="xlarge"
+            shape="circle"
+            className="w-40 mb-5 lg:mb-0 "
+          />
+        </div>
       </div>
 
       <div className="my-16 w-full border-b-2 border-[#00C9D8]"></div>
