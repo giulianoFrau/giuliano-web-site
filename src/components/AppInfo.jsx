@@ -50,10 +50,10 @@ const AppInfo = () => {
             Infine, Excel e Word per la gestione dei dati e dei documenti.
           </p>
           <p className="text-xl leading-relaxed text-white">
-            Attualmente sto studiando React da autodidatta, mettendo subito in
-            pratica le conoscenze acquisite con i lavori precedenti a questa
-            sezione. Questo sito è realizzato proprio con{" "}
-            <span className="text-[#00C9D8]">React</span>.
+            Attualmente sto studiando React da autodidatta, applicando subito le
+            conoscenze acquisite nei progetti che ho presentato nella sezione
+            precedente. Questo sito vetrina è realizzato interamente con
+            <span className="text-[#00C9D8]">&nbsp; React</span>.
           </p>
         </div>
 
@@ -73,6 +73,7 @@ const AppInfo = () => {
         <h2 className="text-4xl font-semibold text-[#00C9D8]">Contatti</h2>
         <div className="flex justify-center space-x-6 mt-10">
           <Button
+            id="contatti"
             icon="pi pi-linkedin"
             className="p-button-rounded p-button-lg p-button-info shadow-lg hover:text-[#00C9D8] transform hover:scale-110 transition-all duration-300"
             onClick={() =>
