@@ -85,11 +85,7 @@ const AppInfo = () => {
             className="p-button-rounded p-button-lg p-button-primary shadow-lg hover:text-[#00C9D8] transform hover:scale-110 transition-all duration-300"
             onClick={() => window.open("https://www.facebook.com/giuly.frau")}
           />
-          <Button
-            icon="pi pi-instagram"
-            className="p-button-rounded p-button-lg p-button-warning shadow-lg hover:text-[#00C9D8] transform hover:scale-110 transition-all duration-300 "
-            onClick={() => window.open("https://www.instagram.com/giuly_frau/")}
-          />
+
           <Button
             icon="pi pi-envelope"
             className="p-button-rounded p-button-lg p-button-help shadow-lg hover:text-[#00C9D8] transform hover:scale-110 transition-all duration-300"
