@@ -21,7 +21,7 @@ const AppHome = () => {
                 className="btn-primary-outline p-2 "
                 onClick={() => {
                   window.open(
-                    "https://drive.google.com/file/d/1IQ_NMfALNAEicx6wBBTd9XKBj_4bhEXS/view"
+                    "https://drive.google.com/file/d/1kwnF2kE5lwlUR1xNYFIriD6MeiN-Oc4x/view?usp=drive_link"
                   );
                 }}
               ></Button>
