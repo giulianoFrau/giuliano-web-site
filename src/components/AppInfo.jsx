@@ -1,5 +1,6 @@
 import { Button } from "primereact/button";
 import { Avatar } from "primereact/avatar";
+import projectManagerImg from "../assets/img/projectManager.jpg";
 
 const AppInfo = () => {
   return (
@@ -96,6 +97,43 @@ const AppInfo = () => {
 
       <div className="my-16 w-full border-b-2 border-[#00C9D8]"></div>
 
+      <div className="flex flex-col lg:flex-row items-center justify-center space-y-10 lg:space-y-0 lg:space-x-16 mt-16">
+        <div className="lg:w-1/3 flex justify-center ">
+          <Avatar
+            image={projectManagerImg}
+            size="xlarge"
+            shape="circle"
+            className="w-40 mb-5 lg:mb-0 "
+          />
+        </div>
+
+        <div className="lg:w-2/3 text-center lg:text-left space-y-6">
+          <h2 className="text-4xl font-semibold  text-[#00C9D8] ">
+            Verso il Project Management: il mio percorso futuro
+          </h2>
+          <p className="text-xl leading-relaxed text-white">
+            Coltivo una forte passione per la grafica e il design, elementi che
+            mi hanno spinto ad approfondire e apprezzare lo sviluppo Front End.
+            Con l’ esperienza maturata nel tempo, sopratutto nella mia attuale
+            posizione da team leader, ho capito che vorrei orientare il mio
+            percorso verso un ruolo più gestionale, che mi permetta di
+            coordinare progetti in modo più ampio: dalla raccolta dei requisiti
+            all’ analisi, dalla redazione della documentazione tecnica alla
+            comunicazione diretta con i clienti fino alla gestione delle
+            risorse. Il mio obiettivo è crescere professionalmente verso ruoli
+            di Project/People Management, contribuendo con organizzazione, senso
+            di responsabilità e capacità di mediazione tra team e stakeholder.{" "}
+            <br></br>In breve tempo, mi piacerebbe passare dall'essere un
+            frontend developer all'essere un Project Manager o un People
+            Manager, con la possibilità, almeno inizialmente, di essere
+            affiancato da una figura Senior che possa aiutarmi a intraprendere
+            questa strada per riuscire poi a fornire un contributo significativo
+            alla gestione dei progetti e delle risorse assegnate.
+          </p>
+        </div>
+      </div>
+
+      <div className="my-16 w-full border-b-2 border-[#00C9D8]"></div>
       <div className="text-center">
         <h2 className="text-4xl font-semibold text-[#00C9D8]">Contatti</h2>
         <div className="flex justify-center space-x-6 mt-10">
