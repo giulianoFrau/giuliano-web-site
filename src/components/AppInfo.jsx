@@ -20,9 +20,11 @@ const AppInfo = () => {
         <div className="lg:w-2/3 text-center lg:text-left space-y-6">
           <h2 className="text-4xl font-semibold  text-[#00C9D8] ">Su di me</h2>
           <p className="text-xl leading-relaxed text-white">
-            Sono una persona socievole, seria, puntuale e molto disponibile.
-            Imparo rapidamente nuove metodologie di lavoro e mi impegno sempre
-            al massimo per raggiungere gli obiettivi prefissati.
+            Sono una persona socievole, affidabile e puntuale, con un forte
+            senso di responsabilità e disponibilità verso colleghi e clienti.
+            Apprendo rapidamente nuove metodologie di lavoro e mi adatto con
+            facilità a contesti diversi. Affronto ogni incarico con impegno e
+            determinazione, perseguendo con costanza gli obiettivi prefissati.
           </p>
         </div>
       </div>
@@ -37,20 +39,47 @@ const AppInfo = () => {
             iniziative chiave come la creazione di Landing Pages pensate per la
             Lead Generation, la progettazione di rubriche personalizzate, e lo
             sviluppo di intranet aziendali con particolare attenzione alla
-            gestione delle risorse umane e alle richieste di ferie e permessi.
-            Nel mio lavoro, ho utilizzato tecnologie come{" "}
-            <span className="text-[#3fb984]">Vue.js</span> (sia la versione 2.7
-            che la 3), JavaScript ES6, Sass, CSS, HTML5, MJML, Bootstrap,
+            creazione di componenti dedicati alla gestione delle risorse umane e
+            le richieste di ferie e permessi. Nel mio lavoro, ho utilizzato
+            principalmente <span className="text-[#3fb984]">Vue.js</span> (sia
+            la versione 2.7 che la 3) come framework FE, inoltre utilizzo
+            tecnologie come JavaScript ES6, Sass, CSS, HTML5, MJML, Bootstrap,
             PrimeVue e PrimeFlex, tra le altre. Utilizzo Outlook, Teams, Skype,
             Slack, Gmail per la comunicazione, Trello, Confluence e Microsoft
-            Loop per la gestione dei progetti, Figma per il design. GitHub e
-            VSCode per lo sviluppo del codice e Microsoft Clarity per l'analisi.
-            Infine, Excel e Word per la gestione dei dati e dei documenti.
+            Loop per la gestione dei progetti, Figma per il design. GitHub,
+            Gitlab e VSCode per lo sviluppo e il mantenimento del codice,
+            Microsoft Clarity per l'analisi. Infine, Excel e Word per la
+            gestione dei dati e dei documenti.
           </p>
           <p className="text-xl leading-relaxed text-white">
-            Attualmente sto studiando React da autodidatta, applicando subito le
-            conoscenze acquisite nei progetti che ho presentato nella sezione
-            precedente. Questo sito vetrina è realizzato interamente con
+            Attualmente ricopro il ruolo di Team Leader Front End all’ interno
+            di un progetto in ambito sanitario, in consulenza presso azienda
+            cliente. Mi interfaccio direttamente con il Project Manager e
+            partecipo alle riunioni con i clienti per la definizione delle
+            priorità e delle soluzioni tecniche. Gestisco e coordino le attività
+            del team Front End, assegnando e monitorando i task, supportando i
+            colleghi nello sviluppo garantendo il rispetto delle scadenze,
+            partecipo alle sessioni di test pre rilascio in produzione oltre che
+            la collaborazione con il team Back End e la redazione di
+            documentazione sia funzionale che tecnica. Anche in questo progetto,
+            il framework utilizzato è{" "}
+            <span className="text-[#3fb984]">Vue.js</span> insieme a{" "}
+            <span className="text-[#3fb984]">Quasar</span> per la gestione delle
+            componenti UI.
+          </p>
+          <p className="text-xl leading-relaxed text-white">
+            In passato ho studiato sia
+            <span className="text-[#DD0031]">&nbsp; Angular</span> che
+            <span className="text-[#00C9D8]">&nbsp; React</span> da autodidatta.
+            In particolare con quest'ultimo ho applicato subito le conoscenze
+            acquisite nei progetti che ho presentato nella sezione precedente,
+            seppur non mi è mai capitato di usarlo in ambito lavorativo, dove
+            sicuramente il contesto è diverso, anche se non penso ci voglia
+            tanto tempo per passare da{" "}
+            <span className="text-[#3fb984]">Vue</span> a
+            <span className="text-[#00C9D8]">&nbsp; React</span>, essendo per
+            certi aspetti piuttosto simili.
+            <br /> Questo sito vetrina è realizzato interamente con
             <span className="text-[#00C9D8]">&nbsp; React</span>.
           </p>
         </div>
