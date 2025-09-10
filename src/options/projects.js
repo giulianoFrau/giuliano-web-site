@@ -1,3 +1,5 @@
+import toDoApp from "../assets/img/toDoApp.png";
+
 export const projects = [
   {
     progetto: "Pokedex",
@@ -28,5 +30,16 @@ export const projects = [
     tecnologie:
       "React, Redux, Tailwind CSS, PrimeReact, Axios,Rest API, React Router, Vite",
     link_repo: "https://github.com/giulianoFrau/react-approach.git",
+  },
+
+  {
+    progetto: "To do App",
+    preview: toDoApp,
+    id: 4,
+    link_progetto: "https://vue-to-do-app-one.vercel.app/",
+    framework: "Vue 2, attualmente convertito a Vue 3",
+    tecnologie:
+      "Vue, Bootstrap. Questo è stato il mio primissimo progetto con Vue 2.",
+    link_repo: "https://github.com/giulianoFrau/Vue-to-do-app.git",
   },
 ];

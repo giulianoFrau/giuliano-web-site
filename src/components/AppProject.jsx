@@ -10,7 +10,10 @@ const AppProject = () => {
     >
       <div className="app__project__content">
         <h1 className="text-center">I miei progetti</h1>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-9 justify-center">
+        <h2 className="text-center">
+          Clicca sulla card per visualizzare il progetto
+        </h2>
+        <div className="grid grid-cols-1 lg:grid-cols-4 gap-9 justify-center">
           {projects.map((project, index) => (
             <ProjectCard
               key={project.id}
