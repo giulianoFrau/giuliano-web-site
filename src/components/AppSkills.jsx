@@ -1,26 +1,47 @@
-import { skills } from "../options/skills";
+import { useLang } from "../i18n/LanguageContext";
 import SkillCard from "./SkillCard";
+import Reveal from "./Reveal";
+
 const AppSkills = () => {
+  const { t } = useLang();
+
   return (
-    <div
-      className="app__skills py-8 bg-gradient-to-r from-black via-gray-900 to-black"
-      id="skills"
-    >
-      <div className="app__skills__content">
-        <h1 className="text-center">Le mie skills</h1>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4  justify-center">
-          {skills.map((skill, index) => (
-            <SkillCard
-              key={skill.name}
-              name={skill.name}
-              icon={skill.icon}
-              description={skill.description}
-              index={index}
-            />
+    <section className="section skills" id="skills">
+      <div className="section__head">
+        <span className="section__eyebrow">{t.skills.eyebrow}</span>
+        <h2 className="section__title">{t.skills.title}</h2>
+        <p className="section__subtitle">{t.skills.subtitle}</p>
+      </div>
+
+      <div className="skills-grid">
+        {t.skills.items.map((skill, index) => (
+          <SkillCard
+            key={skill.name}
+            name={skill.name}
+            icon={skill.icon}
+            description={skill.description}
+            index={index}
+          />
+        ))}
+      </div>
+
+      <Reveal className="ai-card glass" delay={150}>
+        <div className="ai-card__icon">
+          <i className="pi pi-microchip-ai" />
+        </div>
+        <div className="ai-card__body">
+          <h3>{t.skills.aiTitle}</h3>
+          <p>{t.skills.aiText}</p>
+        </div>
+        <div className="ai-card__tools">
+          {t.skills.aiTools.map((tool) => (
+            <span key={tool} className="chip ai-chip">
+              {tool}
+            </span>
           ))}
         </div>
-      </div>
-    </div>
+      </Reveal>
+    </section>
   );
 };
 

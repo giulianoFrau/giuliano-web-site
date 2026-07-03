@@ -1,44 +1,66 @@
-import "../assets/style/Sito.scss";
-import { Button } from "primereact/button";
-const AppHome = () => {
-  return (
-    <>
-      <div className="app__home" id="home">
-        <div className="app__home__content flex flex-col items-end h-full justify-center ">
-          <div className="flex flex-col gap-8">
-            <div className="app__home__titles flex flex-col gap-2 text-white">
-              <div className="app__home__title">
-                Ciao! sono Giuliano,
-                <br /> Frontend developer
-              </div>
-              <div className="app__home__subtitle">
-                Focalizzato su design funzionali e soluzioni web efficaci.
-              </div>
-            </div>
-            <div className="app__home__buttons flex gap-5">
-              <Button
-                label="Scarica il mio CV"
-                className="btn-primary-outline p-2 "
-                onClick={() => {
-                  window.open(
-                    "https://drive.google.com/file/d/1kwnF2kE5lwlUR1xNYFIriD6MeiN-Oc4x/view?usp=drive_link"
-                  );
-                }}
-              ></Button>
+import { useLang } from "../i18n/LanguageContext";
+import { CV_URL } from "../config";
 
-              <Button
-                label="I miei progetti"
-                className="btn-primary p-2 "
-                severity="primary"
-                onClick={() => {
-                  window.location.href = "#project";
-                }}
-              />
-            </div>
-          </div>
+const TECH = ["Vue.js", "React", "JavaScript", "Sass", "Quasar", "Tailwind"];
+
+const AppHome = () => {
+  const { t } = useLang();
+
+  return (
+    <section id="home" className="hero">
+      <div className="hero__bg" aria-hidden="true">
+        <span className="blob blob--1" />
+        <span className="blob blob--2" />
+        <span className="blob blob--3" />
+        <div className="hero__grid" />
+      </div>
+
+      <div className="hero__content">
+        <span className="badge">
+          <span className="badge__dot" />
+          {t.hero.badge}
+        </span>
+
+        <h1 className="hero__title">
+          {t.hero.greeting}
+          <br />
+          <span className="gradient-text">{t.hero.role}</span>
+        </h1>
+
+        <p className="hero__aspiration">
+          <i className="pi pi-arrow-right" /> {t.hero.aspiration}
+        </p>
+
+        <p className="hero__subtitle">{t.hero.subtitle}</p>
+
+        <div className="hero__cta">
+          <a className="btn btn--primary" href={CV_URL} target="_blank" rel="noreferrer">
+            <i className="pi pi-download" /> {t.hero.cv}
+          </a>
+          <button
+            className="btn btn--ghost"
+            onClick={() => document.getElementById("project")?.scrollIntoView({ behavior: "smooth" })}
+          >
+            <i className="pi pi-th-large" /> {t.hero.projects}
+          </button>
+        </div>
+
+        <div className="hero__tech">
+          {TECH.map((tech) => (
+            <span key={tech}>{tech}</span>
+          ))}
         </div>
       </div>
-    </>
+
+      <button
+        className="hero__scroll"
+        onClick={() => document.getElementById("skills")?.scrollIntoView({ behavior: "smooth" })}
+        aria-label={t.hero.scroll}
+      >
+        {t.hero.scroll}
+        <i className="pi pi-chevron-down" />
+      </button>
+    </section>
   );
 };
 

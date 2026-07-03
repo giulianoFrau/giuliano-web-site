@@ -4,7 +4,9 @@ import "primereact/resources/themes/md-light-deeppurple/theme.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "primeicons/primeicons.css";
 import HomeView from "./view/Home.jsx";
+import { LanguageProvider } from "./i18n/LanguageContext.jsx";
 import "./index.css";
+import "./assets/style/Sito.scss";
 
 const router = createBrowserRouter([
   {
@@ -15,6 +17,8 @@ const router = createBrowserRouter([
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <RouterProvider router={router} />
+    <LanguageProvider>
+      <RouterProvider router={router} />
+    </LanguageProvider>
   </StrictMode>
 );

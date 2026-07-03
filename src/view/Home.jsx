@@ -1,19 +1,25 @@
-import AppHome from "../components/AppHome.jsx";
 import AppMenu from "../components/AppMenu.jsx";
-import AppProject from "../components/AppProject.jsx";
+import AppHome from "../components/AppHome.jsx";
+import AppStats from "../components/AppStats.jsx";
 import AppSkills from "../components/AppSkills.jsx";
-import AppInfo from "../components/AppInfo.jsx";
+import AppProject from "../components/AppProject.jsx";
+import AppExperience from "../components/AppExperience.jsx";
+import AppContact from "../components/AppContact.jsx";
 
-function PokedexView() {
+function HomeView() {
   return (
     <>
       <AppMenu />
-      <AppHome />
-      <AppSkills />
-      <AppProject />
-      <AppInfo />
+      <main>
+        <AppHome />
+        <AppStats />
+        <AppSkills />
+        <AppProject />
+        <AppExperience />
+        <AppContact />
+      </main>
     </>
   );
 }
 
-export default PokedexView;
+export default HomeView;
