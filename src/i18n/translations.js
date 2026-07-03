@@ -11,9 +11,9 @@ export const translations = {
       badge: "Disponibile per nuove opportunità",
       greeting: "Ciao, sono Giuliano",
       role: "Frontend Developer & Team Leader",
-      aspiration: "In cammino verso il Project Management",
+      aspiration: "Prossimo obiettivo: il Project Management",
       subtitle:
-        "Costruisco interfacce web pulite ed efficaci e coordino team di sviluppo Front End. Il mio prossimo passo è gestire i progetti dall’idea al rilascio.",
+        "Costruisco interfacce web pulite ed efficaci e coordino team di sviluppo Front End, avendo come prossimo obiettivo una carriera meno tecnica ma più gestionale e organizzativa.",
       cv: "Scarica il CV",
       projects: "Guarda i progetti",
       scroll: "Scorri",
@@ -96,6 +96,7 @@ export const translations = {
           bullets: [
             "Coordino e supporto il team Front End: assegno e monitoro i task garantendo il rispetto delle scadenze.",
             "Mi interfaccio con il Project Manager e partecipo alle riunioni con i clienti per definire priorità e soluzioni tecniche.",
+            "Sviluppo applicazioni CRUD e componenti per la gestione dati, dal form alla lista fino al dettaglio.",
             "Partecipo ai test pre-rilascio e curo la documentazione funzionale e tecnica insieme al team Back End.",
           ],
           stack: ["Vue.js", "Quasar", "JavaScript"],
@@ -125,7 +126,7 @@ export const translations = {
       goalTag: "Il mio obiettivo",
       goalTitle: "Verso il Project Management",
       goalText:
-        "Coltivo una forte passione per grafica e design, che mi ha portato ad amare lo sviluppo Front End. Con l’esperienza da Team Leader ho capito che voglio orientarmi verso un ruolo più gestionale: dalla raccolta dei requisiti all’analisi, dalla documentazione tecnica alla comunicazione con i clienti, fino alla gestione delle risorse. Il mio obiettivo è crescere verso il Project / People Management, contribuendo con organizzazione, senso di responsabilità e capacità di mediazione tra team e stakeholder.",
+        "Coltivo una forte passione per grafica e design, che mi ha portato ad amare lo sviluppo Front End. Con l’esperienza da Team Leader ho capito che voglio orientarmi verso un ruolo più gestionale: dalla raccolta dei requisiti, all’analisi, dalla documentazione tecnica, alla comunicazione con i clienti, fino alla gestione delle risorse. Il mio obiettivo è crescere verso il Project / People Management, contribuendo con organizzazione, senso di responsabilità e capacità di mediazione tra team e stakeholder.",
     },
     contact: {
       eyebrow: "Restiamo in contatto",
@@ -158,9 +159,9 @@ export const translations = {
       badge: "Open to new opportunities",
       greeting: "Hi, I'm Giuliano",
       role: "Frontend Developer & Team Leader",
-      aspiration: "On my way to Project Management",
+      aspiration: "Next goal: Project Management",
       subtitle:
-        "I build clean, effective web interfaces and coordinate Front End teams. My next step is owning projects end to end, from idea to release.",
+        "I build clean, effective web interfaces and coordinate Front End development teams, with my next goal being a career that's less technical and more managerial and organizational.",
       cv: "Download CV",
       projects: "See my projects",
       scroll: "Scroll",
@@ -243,6 +244,7 @@ export const translations = {
           bullets: [
             "I coordinate and support the Front End team: assigning and tracking tasks while keeping deadlines on target.",
             "I liaise with the Project Manager and join client meetings to define priorities and technical solutions.",
+            "I build CRUD applications and data-management components, from forms to lists to detail views.",
             "I take part in pre-release testing and maintain functional and technical documentation together with the Back End team.",
           ],
           stack: ["Vue.js", "Quasar", "JavaScript"],
@@ -272,7 +274,7 @@ export const translations = {
       goalTag: "My goal",
       goalTitle: "Toward Project Management",
       goalText:
-        "I have a strong passion for graphics and design, which led me to love Front End development. My experience as a Team Leader made me realize I want to move toward a more managerial role: from requirements gathering to analysis, from technical documentation to client communication, all the way to resource management. My goal is to grow toward Project / People Management, contributing organization, responsibility and the ability to mediate between team and stakeholders.",
+        "I have a strong passion for graphics and design, which led me to love Front End development. My experience as a Team Leader made me realize I want to move toward a more managerial role: from requirements gathering, to analysis, from technical documentation, to client communication, all the way to resource management. My goal is to grow toward Project / People Management, contributing organization, responsibility and the ability to mediate between team and stakeholders.",
     },
     contact: {
       eyebrow: "Let's stay in touch",

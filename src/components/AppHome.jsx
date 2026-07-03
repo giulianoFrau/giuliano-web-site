@@ -1,7 +1,16 @@
 import { useLang } from "../i18n/LanguageContext";
 import { CV_URL } from "../config";
 
-const TECH = ["Vue.js", "React", "JavaScript", "Sass", "Quasar", "Tailwind"];
+const TECH = [
+  "Vue.js",
+  "React",
+  "JavaScript",
+  "Sass",
+  "Quasar",
+  "Tailwind",
+  "PrimeVue",
+  "PrimeFlex",
+];
 
 const AppHome = () => {
   const { t } = useLang();
@@ -34,12 +43,21 @@ const AppHome = () => {
         <p className="hero__subtitle">{t.hero.subtitle}</p>
 
         <div className="hero__cta">
-          <a className="btn btn--primary" href={CV_URL} target="_blank" rel="noreferrer">
+          <a
+            className="btn btn--primary"
+            href={CV_URL}
+            target="_blank"
+            rel="noreferrer"
+          >
             <i className="pi pi-download" /> {t.hero.cv}
           </a>
           <button
             className="btn btn--ghost"
-            onClick={() => document.getElementById("project")?.scrollIntoView({ behavior: "smooth" })}
+            onClick={() =>
+              document
+                .getElementById("project")
+                ?.scrollIntoView({ behavior: "smooth" })
+            }
           >
             <i className="pi pi-th-large" /> {t.hero.projects}
           </button>
@@ -54,7 +72,11 @@ const AppHome = () => {
 
       <button
         className="hero__scroll"
-        onClick={() => document.getElementById("skills")?.scrollIntoView({ behavior: "smooth" })}
+        onClick={() =>
+          document
+            .getElementById("skills")
+            ?.scrollIntoView({ behavior: "smooth" })
+        }
         aria-label={t.hero.scroll}
       >
         {t.hero.scroll}
