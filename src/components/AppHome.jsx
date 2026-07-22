@@ -1,3 +1,4 @@
+import { useRef, useEffect } from "react";
 import { useLang } from "../i18n/LanguageContext";
 import { CV_URL } from "../config";
 
@@ -14,10 +15,38 @@ const TECH = [
 
 const AppHome = () => {
   const { t } = useLang();
+  const bgRef = useRef(null);
+
+  // Aurora background gently drifts opposite to the pointer for depth.
+  useEffect(() => {
+    if (
+      window.matchMedia("(prefers-reduced-motion: reduce)").matches ||
+      window.matchMedia("(hover: none)").matches
+    ) {
+      return;
+    }
+    let raf = 0;
+    const onMove = (e) => {
+      if (raf) return;
+      raf = requestAnimationFrame(() => {
+        raf = 0;
+        const x = (e.clientX / window.innerWidth - 0.5) * 26;
+        const y = (e.clientY / window.innerHeight - 0.5) * 18;
+        if (bgRef.current) {
+          bgRef.current.style.transform = `scale(1.07) translate(${-x}px, ${-y}px)`;
+        }
+      });
+    };
+    window.addEventListener("pointermove", onMove, { passive: true });
+    return () => {
+      window.removeEventListener("pointermove", onMove);
+      cancelAnimationFrame(raf);
+    };
+  }, []);
 
   return (
     <section id="home" className="hero">
-      <div className="hero__bg" aria-hidden="true">
+      <div className="hero__bg" ref={bgRef} aria-hidden="true">
         <span className="blob blob--1" />
         <span className="blob blob--2" />
         <span className="blob blob--3" />

@@ -88,11 +88,31 @@ p {
 }
 
 .glass {
+  position: relative;
   background: rgba(255, 255, 255, 0.035);
   border: 1px solid var(--border);
   border-radius: 1.1rem;
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
+}
+
+/* Pointer spotlight — --mx/--my are set by Effects.jsx */
+.glass::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background: radial-gradient(
+    260px circle at var(--mx, 50%) var(--my, 50%),
+    rgba(140, 220, 255, 0.09),
+    transparent 65%
+  );
+  opacity: 0;
+  transition: opacity 0.35s ease;
+  pointer-events: none;
+}
+.glass:hover::after {
+  opacity: 1;
 }
 
 .chip {

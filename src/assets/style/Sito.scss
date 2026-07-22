@@ -17,6 +17,25 @@
     transform: translateY(6px);
   }
 }
+@keyframes shine {
+  0% {
+    background-position: 0% center;
+  }
+  100% {
+    background-position: 200% center;
+  }
+}
+@keyframes pulse-node {
+  0% {
+    box-shadow: 0 0 0 4px rgba(0, 201, 216, 0.16);
+  }
+  55% {
+    box-shadow: 0 0 0 11px rgba(0, 201, 216, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 4px rgba(0, 201, 216, 0);
+  }
+}
 @keyframes pulse-dot {
   0% {
     box-shadow: 0 0 0 0 rgba(47, 230, 160, 0.5);
@@ -36,6 +55,19 @@
   z-index: 50;
   padding: 0.85rem 1rem;
   transition: padding 0.3s ease;
+
+  &__progress {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, var(--accent), var(--accent-2));
+    transform-origin: left;
+    transform: scaleX(0);
+    border-radius: 0 2px 2px 0;
+    box-shadow: 0 0 12px rgba(0, 201, 216, 0.55);
+  }
 
   &__inner {
     max-width: 72rem;
@@ -224,6 +256,8 @@
     position: absolute;
     inset: 0;
     z-index: 0;
+    transition: transform 0.3s ease-out;
+    will-change: transform;
     &::after {
       content: "";
       position: absolute;
@@ -293,6 +327,12 @@
     font-weight: 800;
     letter-spacing: -0.03em;
     line-height: 1.08;
+
+    // slow shimmer across the gradient headline
+    .gradient-text {
+      background-size: 200% auto;
+      animation: shine 7s linear infinite;
+    }
   }
 
   &__aspiration {
@@ -789,6 +829,10 @@
     background: var(--ink);
     border: 3px solid var(--accent);
     box-shadow: 0 0 0 4px rgba(0, 201, 216, 0.12);
+  }
+  // the "today" node breathes
+  &:first-child::before {
+    animation: pulse-node 2.6s ease-out infinite;
   }
 }
 .tl-period {

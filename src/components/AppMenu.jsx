@@ -9,10 +9,15 @@ const AppMenu = () => {
   const { t, lang, toggle } = useLang();
   const [open, setOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const [progress, setProgress] = useState(0);
   const active = useActiveSection(SECTION_IDS);
 
   useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 24);
+    const onScroll = () => {
+      setScrolled(window.scrollY > 24);
+      const max = document.documentElement.scrollHeight - window.innerHeight;
+      setProgress(max > 0 ? window.scrollY / max : 0);
+    };
     onScroll();
     window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
@@ -32,6 +37,11 @@ const AppMenu = () => {
 
   return (
     <header className={`nav ${scrolled ? "nav--scrolled" : ""}`}>
+      <span
+        className="nav__progress"
+        style={{ transform: `scaleX(${progress})` }}
+        aria-hidden="true"
+      />
       <div className="nav__inner">
         <button className="nav__logo" onClick={() => go("home")} aria-label="Giuliano Frau">
           <span className="gradient-text">GF</span>
